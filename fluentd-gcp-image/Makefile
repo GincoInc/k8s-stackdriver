@@ -26,7 +26,7 @@ build:
 
 
 push:
-	gcloud docker -- push $(PREFIX)/fluentd-gcp:$(TAG)
+	docker push $(PREFIX)/fluentd-gcp:$(TAG)
 
 
 update-dependencies: build
